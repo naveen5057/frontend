@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(b.jpg);
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+
+            }
+            .login
+            {
+                background-color: olive;
+                width: 240px;
+                height: 300pxs;
+                border: 1px solid;
+                padding: 40px;
+                margin: auto;
+                margin-top: 69px;
+            }
+            form
+            {
+                width: 240px;
+                text-align: center;
+            }
+            input{
+                width: 240px;
+                text-align: center;
+                background-color: wheat;
+                border: 2px solid transparent;
+                border-radius: 20px;
+                font-size: 16px;
+                font-weight: 200;
+                padding: 10px;
+                transition: border .5s;
+            }
+            input[type=submit]
+            {
+                background-color: darkorange;
+            }
+            input[type=submit]:hover
+            {
+                background-color: yellow
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="login" >
+            <form>
+                <h2>login</h2>
+                <br>
+                <input type="text" name="username" placeholder="username">
+                <br>
+                <br>
+                <input type="password" name="password" placeholder="password">
+                <br>
+                <br>
+                <input type="submit"  value="login">
+                <br>
+                <br>
+                <a href="#">forget your password?</a>
+            </form>
+        </div>
+        <script>
+            alert("logged in sucessfully");
+        </script>
+    </body>
+</html>

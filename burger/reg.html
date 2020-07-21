@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <style>
+            
+              body
+              {
+                  background-color: green;
+              }
+            h1{
+                color: goldenrod;
+            }
+            button{
+                border-radius: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <field>
+        <form action="" onsubmit="sumbitfunction()">
+            <h1>Feedback form</h1>
+        <h2>We would love to hear your thoughts, concerns or problems with anything so we can improve!</h2>
+        <label for="">First Name</label>
+        <input type="text"  name="" placeholder="fname" id="fname" onfocus="focusfunction(this)" onblur="blurfunction(this)">
+        <br><br>
+        <label for="">last Name</label>
+        <input type="text" name="" placeholder="lastname" id="lname" onfocus="focusfunction(this)" onblur="blurfunction(this)">
+        <br><br>
+        <label for="">E-mail id</label>
+        <input type="text" name="" id="mail" onfocus="focusfunction(this)" onblur="blurfunction(this)">
+        <br><br>
+        <label for="">Phone</label>
+        <input type="text" name=""  id="ph" onfocus="focusfunction(this)" onblur="blurfunction(this)">
+        <br><br>
+        <h3>Feedback Type</h3>
+            <input type="radio" name="">Comments
+            <input type="radio" name="">Bug Reports
+            <input type="radio" name="">Questions
+            <br/><br/>
+            <h3>Describe Feedback: *</h3>
+            <textarea rows="10" cols="45"></textarea><br/>
+            <br><br>
+            <button>sumbit Feedback</button>
+
+        </form>
+        <script>
+            function focusfunction(element)
+            {
+                element.style.backgroundColor="yellow";
+            }
+            function blurfunction(element)
+            {
+                element.style.backgroundColor="";
+            }
+             function sumbitfunction()
+             {
+                 alert("sucessfully completed");
+             }
+
+            </script>
+            </field>
+      </body>
+      </html>
+

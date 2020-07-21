@@ -1,0 +1,57 @@
+<html>
+    <head>
+       
+        <style>
+            body
+            {
+                background-color: lawngreen;
+            }
+            h1{
+                color: lightslategray;
+            }
+            
+        </style>
+            
+    
+    </head>
+    <body>
+        <h1>Feedback form</h1>
+        <h2>We would love to hear your thoughts, concerns or problems with anything so we can improve!</h2>
+        <form>
+            <h3>Feedback Type</h3>
+            <input type="radio" name="">Comments
+            <input type="radio" name="">Bug Reports
+            <input type="radio" name="">Questions
+            <br/><br/>
+            Name:<input type="text" name="" placeholder="fname" id="sname">
+            <br/><br/>
+            lname:<input type="text" name="" placeholder="lname" id="sclass">
+            <br/><br/>
+            E-mail:<input type="text" name="" placeholder="" id="mail">
+            <br/><br/>
+            phone:<input type="text" name="" placeholder="" id="num">
+
+            <h3>Describe Feedback: *</h3>
+            <textarea rows="10" cols="45"></textarea><br/>
+        
+            
+        </form>
+        <script src="js/jquery.js"></script>
+        <script>
+            
+            $(document).ready(function(){
+                $("#sname,#sclass,#mail").focus(function(){
+
+                
+                    $(this).css("background-color","yellow");
+                
+                });
+            });
+        </script>
+
+    </body>
+     
+         
+     
+
+</html>

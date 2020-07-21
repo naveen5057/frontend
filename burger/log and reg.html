@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(b.jpg);
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+
+            }
+            .login-page
+            {
+                background-color: blue;
+                width: 240px;
+                height: 300pxs;
+                border: 1px solid;
+                padding: 40px;
+                margin: auto;
+                margin-top: 69px;
+            }
+            .form
+            {
+                width: 240px;
+                text-align: center;
+            }
+            .form input{
+                width: 240px;
+                text-align: center;
+                background-color: wheat;
+                border: 2px solid transparent;
+                border-radius: 20px;
+                font-size: 16px;
+                font-weight: 200;
+                padding: 10px;
+                transition: border .5s;
+                
+            }
+            .form button
+            {   
+                width: 240px;
+                text-align: center;
+                
+                border: 2px solid transparent;
+                border-radius: 20px;
+                font-size: 16px;
+                font-weight: 200;
+                padding: 10px;
+                transition: border .5s;
+                cursor: pointer;
+                background-color: orange;
+            }
+            .form button:hover
+            {
+                background-color: yellow;
+            }
+            .form .registartion-form
+            {
+                display: none;
+            }
+
+            
+            
+            
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="login-page" >
+            <div class=form>
+                <form class="registartion-form">
+                    <h2>Registration-form</h2>
+                <br>
+                <input type="text" name="username" placeholder="username">
+                <br>
+                <br>
+                <input type="password" name="password" placeholder="password">
+                <br>
+                <br>
+                <input type="text"  placeholder="email-id">
+                <br>
+                <br>
+                <button>Create</button>
+                <p class="message">Already Registered?<a href="">login</a></p>
+            
+            </form>
+            <form class="login-form">
+                <h2>login</h2>
+                <br>
+                <input type="text" name="username" placeholder="user name">
+                <br>
+                <br>
+                <input type="password" name="password" placeholder="password">
+                <br>
+                <br>
+                <button>login</button>
+                <p class="message">Not Registered?<a href="">Register</a></p>
+                </form>
+                </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script>
+            $(".message a").click(function(){
+                $(".form").animate({height:"toggle",opacity:"toggle"},"slow");
+
+            });
+        </script>
+        
+    </body>
+</html>

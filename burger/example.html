@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url(sad.jpg);
+                background-position: center;
+                background-size: cover;
+                height: 100vh;
+            }
+            
+
+          .wrap
+          {
+              width: 400px;
+              box-sizing: border-box;
+              margin: auto;
+              border-radius: 20px;
+              background: rgba(0,0,0,0.8);
+              padding: 40px;
+              color: #fff;
+              margin-top: 100px;
+          }
+          h2{
+                text-align: center;
+            }
+
+            input[type=text],input[type=password]
+            {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 12px 5px;
+                background: rgba(0,0,0,0.10);
+                outline: none;
+                border: none;
+                border-bottom: 1px dotted #fff;
+                color: #fff;
+                border-radius: 5px;
+                margin: 5px;
+                font-weight: bold;
+            }
+
+            input[type=submit]
+            {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px 0;
+                outline: none;
+                border: none;
+                background-color: midnightblue;
+                opacity: 0.7;
+                border-radius: 20px;
+                font-size: 20px;
+                color: #fff;
+            }
+            input[type=submit]:hover{
+             background-color: olivedrab;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <h2>Register</h2>
+            <form>
+                
+                
+                <input type="text" placeholder="Username..." required>
+                <input type="text" placeholder="Email..." required>
+                <input type="password" placeholder="Password..." required>
+                <input type="password" placeholder="Confirm Password..." required>
+                <br><br>
+                <input type="submit" value="Register">
+               <p> Already registered?<a href="login.html">login</a></p>
+               
+            </form>
+        </div>
+    </body>
+</html>
